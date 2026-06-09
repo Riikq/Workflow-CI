@@ -42,7 +42,7 @@ jobs:
 
       - name: Build Docker Image via MLflow
         run: |
-          mlflow models build-docker -m final_model/ -n ${{ secrets.DOCKER_USERNAME }}/pilgrimage-model:latest
+          mlflow models build-docker -m final_model/ -n ${{ secrets.DOCKER_USERNAME }}/pilgrimage_model:latest
 
       - name: Push Docker Image to Docker Hub
         run: |
