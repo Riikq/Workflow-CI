@@ -28,7 +28,7 @@ jobs:
 
       - name: Train Model & Generate Artifacts
         run: |
-          mlflow run
+          mlflow run . --env-manager=local
 
       - name: Save Model Artifacts to GitHub
         uses: actions/upload-artifact@v7
